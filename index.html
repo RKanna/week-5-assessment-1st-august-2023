@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -70,11 +71,11 @@
     <!-- 6. Create an image slider with previous and next buttons for manual navigation. The slider should also have an auto-play feature.  -->
 
     <div class="image-slider">
-      <img src="image1.jpg" />
+      <img src="image1.jpg" class="image imageOne" id="imageOne" />
 
-      <img src="image2.jpg" />
+      <img src="image2.jpg" class="image imageTwo" id="imageTwo" />
 
-      <img src="image3.jpg" />
+      <img src="image3.jpg" class="image imageThree" id="imageThree" />
     </div>
 
     <button onclick="prevSlide()">Previous</button>
@@ -82,6 +83,59 @@
     <button onclick="nextSlide()">Next</button>
 
     <button onclick="toggleAutoPlay()">Toggle Auto-play</button>
+
+    <!-- End of six -->
+    <h2>..................................................................</h2>
+
+    <!-- 7. Create a "Scroll to Top" button that appears when the user scrolls down and takes them to the top of the page when clicked.  -->
+
+    <button onclick="scrollToTop()">Scroll to Top</button>
+
+    <!-- End of Seven -->
+    <h2>...................................................................</h2>
+    <!-- 8. Create a countdown timer that starts from a specified time and updates in real-time until it reaches zero.  -->
+    <input type="number" id="minutes" placeholder="Enter minutes" />
+
+    <input type="number" id="seconds" placeholder="Enter seconds" />
+
+    <button onclick="startTimer()">Start Timer</button>
+
+    <p id="timer"></p>
+
+    <!-- End of Eigth -->
+
+    <h2>...................................................................</h2>
+    <!-- 9. Write a JavaScript function that accepts a row, column (to identify a particular cell) and a string to update the cell's contents.  -->
+    <table id="myTable" border="1">
+      <tr>
+        <td>Row1 cell1</td>
+
+        <td>Row1 cell2</td>
+      </tr>
+
+      <tr>
+        <td>Row2 cell1</td>
+
+        <td>Row2 cell2</td>
+      </tr>
+
+      <tr>
+        <td>Row3 cell1</td>
+
+        <td>Row3 cell2</td>
+      </tr>
+    </table>
+
+    <form>
+      <input type="button" onclick="changeContent()" value="Change content" />
+    </form>
+    <!-- End of Nine -->
+
+    <h2>
+      .....................................................................
+    </h2>
+    <!-- 10. Write a JavaScript function to parameterize a string.  -->
+
     <script src="script.js"></script>
   </body>
 </html>
